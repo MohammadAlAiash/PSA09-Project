@@ -26,6 +26,21 @@ public class Benchmark {
         this.softwareList = softwareList;
     }
 
+    /*
+    * @requires console !== null
+    * The console object has a list of software installed on it, which is not null and contains at least one software object.
+    * Each software object in the list has a valid computing usage value.
+    * @ensures The method returns a double value representing the benchmark performance of the console.
+    * The returned value is the result of dividing the performance value of the console's processing unit
+    * by the total computing usage of all the software installed on the console.
+    */
+    /**
+     * This method calculates the benchmark performance of a console by dividing
+     * the performance value of the console's processing unit by the total computing usage of all
+     * the software installed on the console.
+     * @param console
+     * @return
+     */
     public double executeBenchmark(Console console){
         double performanceValue = console.getProcessingUnit().getPerformanceValue();
         double totalComputingUsage = 0;

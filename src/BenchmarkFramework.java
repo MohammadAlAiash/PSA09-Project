@@ -43,5 +43,8 @@ public class BenchmarkFramework {
         System.out.println("the benchmark of StudyStation: "+ benchmark.executeBenchmark( studyStation));
         System.out.println("the benchmark of Learnditch: "+ benchmark.executeBenchmark(learnditch));
 
+        CheatBenchmark cheatBenchmark = new CheatBenchmark(softwareList);
+        System.out.println(cheatBenchmark.executeBenchmark(learnditch));
+
     }
 }
